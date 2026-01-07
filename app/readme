@@ -1,0 +1,18 @@
+    <!--
+        按钮如果使用Button标签 ,那么如果你themes中使用的是Material主题
+        就会覆盖按钮文件中的颜色 android:background="@drawable/button"资源文件中的颜色属性将不会生效
+        需添加app:backgroundTint="@null"属性
+     -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="485dp"
+        android:background="@drawable/button"
+        android:text="注  册"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@null"
+        android:alpha="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>

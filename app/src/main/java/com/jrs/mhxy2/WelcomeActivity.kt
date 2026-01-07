@@ -11,7 +11,7 @@ import com.jrs.mhxy2.databinding.ActivityWelcomeBinding
 class WelcomeActivity : AppCompatActivity() {
 
     private lateinit var WelComebinding: ActivityWelcomeBinding
-    private lateinit var tv: TextView
+//    private lateinit var tv: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //初始化binding
@@ -25,16 +25,16 @@ class WelcomeActivity : AppCompatActivity() {
 
     private fun setListener(){
         //lambda 表达式
-        tv.setOnClickListener{
-            view ->
-            //处理点击事件
-            var intent : Intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        tv.setOnClickListener{
+//            view ->
+//            //处理点击事件
+//            var intent : Intent = Intent(this,MainActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
     }
 
     private fun initView(){
-        tv = WelComebinding.welcomeTvCome
+//        tv = WelComebinding.welcomeTv
     }
 }
