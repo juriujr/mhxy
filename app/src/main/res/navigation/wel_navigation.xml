@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wel_navigation"
+    app:startDestination="@+id/wel_navigation_start">
+
+    <fragment
+        android:id="@+id/wel_navigation_start"
+        android:name="com.jrs.mhxy2.ui.wel_start.startFragment"
+        android:label="@string/title_start"
+        tools:layout="@layout/wel_fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/wel_navigation_login"
+            app:enterAnim="@anim/silde_in_right"
+            app:exitAnim="@anim/silde_out_left"
+            app:popEnterAnim="@anim/silde_in_left"
+            app:popExitAnim="@anim/silde_out_right" />
+        <action
+            android:id="@+id/action_startFragment_to_registFragment"
+            app:destination="@id/wel_navigation_regist"
+            app:enterAnim="@anim/silde_in_right"
+            app:exitAnim="@anim/silde_out_left"
+            app:popEnterAnim="@anim/silde_in_left"
+            app:popExitAnim="@anim/silde_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wel_navigation_regist"
+        android:name="com.jrs.mhxy2.ui.wel_regist.registFragment"
+        android:label="@string/title_regist"
+        tools:layout="@layout/wel_fragment_regist" />
+
+    <fragment
+        android:id="@+id/wel_navigation_login"
+        android:name="com.jrs.mhxy2.ui.wel_login.loginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/wel_fragment_login" />
+</navigation>
