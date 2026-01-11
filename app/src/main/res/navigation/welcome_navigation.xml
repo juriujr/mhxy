@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_wel"
+        android:name="com.jrs.mhxy2.ui.home.HomeFragment"
+        android:label="欢迎"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_regist"
+        android:name="com.jrs.mhxy2.ui.dashboard.DashboardFragment"
+        android:label="注册"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.jrs.mhxy2.ui.notifications.NotificationsFragment"
+        android:label="登录"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
